@@ -1,0 +1,34 @@
+[
+    {
+        "test_params": {"user_consent": "Y", "ifsc": "HDFC0000885", "account_number":"000901590812"},
+        "test_type": "positive",
+        "expected_output": {"Status": 200}
+    },
+     {
+        "test_params": {"user_consent": "", "ifsc": "", "account_number":""},
+        "test_type": "negative",
+        "expected_output": {"Status": 452}
+    },
+    {
+        "test_params": {"user_consent": "Y", "ifsc": "", "account_number":""},
+        "test_type": "negative",
+        "expected_output": {"Status": 452}
+    },
+        {
+        "test_params": {"user_consent": "", "ifsc": "HDFC0000885", "account_number":""},
+        "test_type": "negative",
+        "expected_output": {"Status": 452}
+    },
+      {
+        "test_params": {"user_consent": "", "ifsc": "", "account_number":"000901590812"},
+        "test_type": "negative",
+        "expected_output": {"Status": 452}
+    },
+      {
+        "test_params": {"user_consent": "", "ifsc": "", "account_number":""},
+        "test_type": "negative",
+        "expected_output": {"Status": 452}
+    }
+
+
+]
