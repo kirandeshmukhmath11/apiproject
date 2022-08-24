@@ -24,8 +24,8 @@ jobs:
       
     #- uses: actions/checkout@v3
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag kirandeshmukhmath/my-image-name
+      run: docker build . --file Dockerfile --tag kirandeshmukhmath/imageOfAPI
       
     - name: Docker Push
       run: |
-        docker push kirandeshmukhmath/my-image-name
+        docker push kirandeshmukhmath/imageOfAPI
